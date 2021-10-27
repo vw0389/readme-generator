@@ -45,7 +45,9 @@ THEN I am taken to the corresponding section of the README
 ## Links
 
 Git: https://github.com/vw0389/readme-generator
+
 Walkthrough: https://vweinert.com/challenge_9.webm
+
 Sample Generated Readme: https://github.com/vw0389/readme-generator/blob/main/walkthrough_generated_readme.md
 
 ## Usage
