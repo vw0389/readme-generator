@@ -23,7 +23,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === "None") {
     return "";
-  } else {
+  } else {``
     return `## License
     
 ${renderLicenseBadge(license)}
@@ -58,6 +58,7 @@ ${data.usage}
 ## Tests
 
 ${data.tests}
+
 ${renderLicenseSection(data.license)}
 ## Contribution
 

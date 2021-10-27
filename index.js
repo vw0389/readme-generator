@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
+
 const questions = [{
     type: 'input',
     name: 'title',
@@ -63,7 +63,7 @@ const questions = [{
 {
     type: 'input',
     name: 'contributing',
-    message: 'Enter usage contributing instructions (leave blank for default for Contributor Covenant Code of Conduct',
+    message: 'Enter contributing conduct rules (leave blank for default for Contributor Covenant Code of Conduct',
     default: ''
 },
 {
