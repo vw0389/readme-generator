@@ -58,7 +58,7 @@ const questions = [{
     type: 'list',
     name: 'license',
     message: 'Select a license (required)',
-    choices: ['No License (Public Domain)', 'GPL', 'BSD', 'Apache', 'MIT'],
+    choices: ['None', 'GPL', 'MIT'],
 },
 {
     type: 'input',
@@ -112,7 +112,7 @@ function writeToFile(fileName, data) {
 
 function init() { 
     inquirer.prompt(questions).then((answers) => {
-        if (answers.contributing === '') {
+        if (!answers.contributing) {
             answers.contributing = fs.readFileSync("./utils/coc.md", 'utf-8');
         }
         let md = generateMarkdown(answers);
